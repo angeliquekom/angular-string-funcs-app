@@ -27,8 +27,8 @@ Install and Test
 Clone the application repository using [git][git]:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
+git clone https://github.com/angeliquekom/angular-string-funcs-app.git
+cd angular-string-funcs-app
 ```
 
 ### Install Dependencies
