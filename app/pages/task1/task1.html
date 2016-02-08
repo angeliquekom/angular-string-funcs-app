@@ -1,0 +1,16 @@
+<h1>Task 1</h1>
+<p>Given two strings s1 and s2, we want to visualize how different the two strings are. Please type the strings you prefer at the below fields.</p>
+<form name="myForm">
+    <label>
+       s1:
+       <input type="text" name="first" ng-model="vm.strings.first"/>
+    </label>
+    <label>
+       s2:
+       <input type="text" name="second" ng-model="vm.strings.second"/>
+    </label>
+    <br/><br/>
+    <input type="submit" ng-click="vm.resultString(vm.strings)" value="Calculate" />
+</form>
+
+<p ng-if="vm.outputString">mix(s1, s2) --> <span>"{{vm.outputString}}"</span> </p>

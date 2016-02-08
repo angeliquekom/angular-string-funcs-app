@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* app css stylesheet */
+html,body
+{
+    height: 100%;
+    background: #F6F6F6;
+    font-family: 'Noto Sans', sans-serif;
+}
+header,footer,div
+{
+   width: 100%;
+}
+.container
+{
+    height: 100%;
+    margin: -64px 0 -30px;
+    padding: 64px 0 30px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#content {
+    overflow:auto;
+    height:100%;
+}
+
+.block
+{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header
+{
+    height: 100px;
+    position: relative;
+    z-index:1;
+    padding-top: 20px;
+    border-top: 2px solid #00A9F2;
+}
+
+a {
+    color: #FFFFFF;
+    font-size: 18px;
+    background: #06435f;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+a:hover {
+  background: #00A9F2;
+}
+
+.error {
+  color: red;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #06435f;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.5;
+}
+
+input[type="submit"]:hover {
+    background: #00A9F2;
+}
+
+label, span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+span {
+  padding: 10px;
+  margin: 10px;
+}
+
+footer
+{
+    height: 30px;
+    background: #00A9F2;
+    position: relative;
+    text-align: center;
+    z-index:1;
+}
+
+footer span {
+  margin:0px;
+  padding:0px;
+}

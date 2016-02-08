@@ -1,0 +1,15 @@
+<h1>Task 3</h1>
+<p>Reverse only the odd characters in a string. Please type the string at the below field.</p>
+<h2>With Controller</h2>
+<form name="myForm">
+    <label>
+       Input:
+       <input type="text" name="string" ng-model="vm.string" ng-disabled="vm.finalString"/>
+    </label>
+    <input type="submit" ng-click="vm.reverseString(vm.string)" value="Calculate" />
+</form>
+
+<p ng-if="vm.finalString">Output - <span>{{vm.finalString}}</span> </p>
+
+<h2>With Directive</h2>
+<reverse-odd></reverse-odd>

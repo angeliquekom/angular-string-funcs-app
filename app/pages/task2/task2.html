@@ -1,0 +1,21 @@
+<h1>Task 2</h1>
+<p>Return one int array with numbers from both arrays shuffled one by one from each input array. Please type the elements of each array at the below fields. For example type: 1,2,3,4</p>
+<form name="myForm">
+    <label>
+       Input1:
+       <input type="text" name="first" ng-list ng-model="vm.arrays.first" ng-pattern="/^([0-9]|[0-9],|[0-9],\s)+$/"/>
+    </label>
+    <label>
+       Input2:
+       <input type="text" name="second" ng-list ng-model="vm.arrays.second" ng-pattern="/^([0-9]|[0-9],|[0-9],\s)+$/"/>
+    </label>
+    <input type="submit"
+      ng-click="vm.compoundArray(vm.arrays)"
+      ng-disabled="myForm.second.$error.pattern || myForm.first.$error.pattern"
+      value="Calculate" />
+    <br/><br/>
+    <div><span ng-show="myForm.first.$error.pattern" class="error">Not a valid input at field "Input1"!</span></div>
+    <div><span ng-show="myForm.second.$error.pattern" class="error">Not a valid input at field "Input2"!</span></div>
+</form>
+
+<p ng-if="vm.splittedArrays">Output - <span>{{vm.splittedArrays}}</span> </p>
