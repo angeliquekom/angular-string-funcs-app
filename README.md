@@ -22,7 +22,7 @@ The directive with the same functionality is in `reverse-odd-directive.js` file 
 
 Install and Test
 ----------------------
-### Clone angular-seed
+### Clone repository
 
 Clone the application repository using [git][git]:
 
